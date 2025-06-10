@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-from ChallengeButton import connection_services_challenge_button
+from controller.ChallengeButton import connection_services_challenge_button
 
 (player_service, db_utils_for_statistics, db_init_for_statistics,
  session_for_statistics, match_repository, player_repository_for_statistics,

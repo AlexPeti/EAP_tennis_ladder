@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-from db_utils import DBUtils
+from db_utils.DBUtils import DBUtils
 
 from service.PlayerService import PlayerService
 from service.MatchService import MatchService
