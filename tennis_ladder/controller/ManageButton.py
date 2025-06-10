@@ -10,6 +10,7 @@ from service.PlayerService import PlayerService
 from repository.PlayerRepository import PlayerRepository
 from DBInit import DBInit
 
+
 def ManageButton(parent_frame, refresh_leaderboard):
     """
     Create and return a Manage button for the Tennis Ladder application.
@@ -68,7 +69,6 @@ def ManageButton(parent_frame, refresh_leaderboard):
                 manage_window.lift()  # Bring the window to the front
 
         tk.Button(add_frame, text="Add Player", command=add_player, bg="#4CAF50", fg="white").pack(pady=5)
-        
 
         # Frame for deleting a player
         delete_frame = tk.Frame(manage_window, bg="red")
@@ -107,7 +107,7 @@ def ManageButton(parent_frame, refresh_leaderboard):
                     manage_window.lift()  # Bring the window to the front
             else:
                 messagebox.showwarning("Input Error", "Please select a player to delete.")
-                manage_window.lift() # Bring the window to the front
+                manage_window.lift()  # Bring the window to the front
 
         tk.Button(delete_frame, text="Delete Player", command=delete_player, bg="#f44336", fg="white").pack(pady=5)
 
